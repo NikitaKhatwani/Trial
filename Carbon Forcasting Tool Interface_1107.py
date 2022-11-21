@@ -30,7 +30,7 @@ def get_slice_membership(df, cities_Options ):
 st.header('Carbon Forecasting Tool')
 
 # data source =https://www.kaggle.com/datasets/juanmah/world-cities
-df = pd.read_csv(r"C:\Users\nikit\Downloads\worldcities - worldcities (1).csv")
+df = pd.read_csv("https://raw.githubusercontent.com/NikitaKhatwani/Trial/main/world-cities%20-%20world-cities.csv")
 cities_Options = st.selectbox("City",df["city"].unique())
 program_Options = st.selectbox("Program",df["Program"].unique())
 #st.text("Area")
